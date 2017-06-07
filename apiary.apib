@@ -6,9 +6,9 @@ HOST: http://polls.apiblueprint.org/
 With this API user profile can be retrieved.
 Requires 
 
-## Profile Collection [/api/v0/user/details]
+## Profile Collection [/api/v0/users/{id}/details]
 
-### Get a user Profile [GET]
+### Get a User Profile [GET]
 
 + Response 200 (application/json)
 
@@ -29,3 +29,13 @@ Requires
                 "phone_number":"02023484838"
             }
         ]
+
+### Update a User Profile [PATCH]
+
++ Request 
+
+        {
+            "phone_number":"02023484837"
+        }
+
++ Response 204 (application/patch-json)
