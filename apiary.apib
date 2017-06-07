@@ -1,0 +1,31 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# User API
+
+With this API user profile can be retrieved.
+Requires 
+
+## Profile Collection [/api/v0/user/details]
+
+### Get a user Profile [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "first_name": "Frank",
+                "prefix_name": "de",
+                "last_name": "Bruin",
+                "full_name": "Frank de bruin" 
+                "address": {
+                    "street":"Keizersgracht",  
+                    "house_number":"112",
+                    "extension":"2 Hoog"
+                    "postalcode":"1022 AG"
+                    "city":"Amsterdam"
+                },
+                "email_address":"fdebruin@xs4all.nl"
+                "phone_number":"02023484838"
+            }
+        ]
